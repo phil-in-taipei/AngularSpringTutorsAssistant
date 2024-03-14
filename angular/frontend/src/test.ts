@@ -21,6 +21,8 @@ getTestBed().initTestEnvironment(
 );
 
 // Then we find all the tests.
-const context = require.context('./', true, /\.spec\.ts$/);
+// note: line below commented out after upgrading from 13 to 17
+//const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
-context.keys().map(context);
+// note: line below commented out after upgrading from 13 to 17
+//context.keys().map(context);
