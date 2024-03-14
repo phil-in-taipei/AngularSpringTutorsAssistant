@@ -1,5 +1,31 @@
 <div>
+    <ng-container *ngIf="{value: usrProfileLoaded$ | async} as context">
+        <div *ngIf="!context.value">
+          <div class="text-center">
+            <div class="spinner-border text-secondary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <br />
+          </div>
+          <br />
+        </div>
+    </ng-container>
     <div *ngIf="usrProfile$ | async as profile" class="container">
+        <div *ngIf="userProfileSubmitErrMsg$ | async as errMsg">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <h4 class="text-danger">{{ errMsg }}</h4>
+              <button type="button" class="btn-close" (click)="onClearStatusMsgs()"
+              data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+          
+          <div *ngIf="userProfileSubmitSuccessMsg$ | async as successMsg">
+            <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+              <h6>{{ successMsg }}</h6>
+              <button type="button" class="btn-close" (click)="onClearStatusMsgs()"
+              data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
         <div class="table-responsive">
             <div class="container mt-1 pt-1">
                 <h1>Profile of: {{ profile.user.username[0] | uppercase }}{{ profile.user.username.substring(1) }}</h1>
