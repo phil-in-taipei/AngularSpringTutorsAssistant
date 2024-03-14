@@ -1,0 +1,55 @@
+<form (submit)="onSubmitEditedProfile(profileForm)" #profileForm="ngForm">
+    <div>
+        <label>Email</label>
+        <input
+        class="form-control"
+        name="contact_email"
+        type="email"
+        required
+        text
+        minlength="5"
+        ngModel
+        placeholder="{{profile.contact_email}}"
+        #contact_email="ngModel"
+      >
+      <div *ngIf="contact_email.touched && contact_email.invalid">Please enter an email.</div>
+    </div>
+    <br />
+    <div>
+        <label>Surname</label>
+        <input
+        class="form-control"
+        type="text"
+        minlength="2"
+        rows="4"
+        name="surname"
+        ngModel
+        required
+        placeholder="{{profile.surname}}"
+        #surname="ngModel"
+        >
+      <div *ngIf="surname.touched && surname.invalid">Please enter your surname.</div>
+    </div>
+    <br />
+    <div>
+        <label>Given Name</label>
+        <input
+        class="form-control"
+        type="text"
+        minlength="3"
+        rows="4"
+        name="given_name"
+        ngModel
+        required
+        placeholder="{{profile.given_name}}"
+        #given_name="ngModel"
+        >
+      <div *ngIf="given_name.touched && given_name.invalid">Please enter your given name.</div>
+    </div>
+    <hr />
+    <div>
+      <button class="btn btn-outline-secondary" type="submit"
+      >Submit</button>
+    </div>
+    <br />
+</form>

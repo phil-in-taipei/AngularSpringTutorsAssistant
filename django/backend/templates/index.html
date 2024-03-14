@@ -1,0 +1,22 @@
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TL&T</title>
+  <base href="/">
+  <link rel="icon" type="image/x-icon" href="{% static 'angular/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'angular/styles.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body style="background-color:black">
+  <app-root></app-root>
+    <script src="{% static 'angular/scripts.js' %}"></script>
+    <script src="{% static 'angular/runtime.js' %}"></script>
+    <script src="{% static 'angular/polyfills.js' %}"></script>
+    <script src="{% static 'angular/src_app_authenticated-user_authenticated-user_module_ts.js' %}"></script>
+    <script src="{% static 'angular/main.js' %}"></script>
+</body>
+</html>

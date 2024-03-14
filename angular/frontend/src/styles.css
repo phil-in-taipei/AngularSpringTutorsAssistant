@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+.color-frame {
+    background-color: Black;
+    border: #0098da solid 1px !important;
+    outline: #010b3e solid 10px !important;
+    color: #758d97 !important;
+  }
+  
+  .content {
+      padding-top: 70px;
+  }

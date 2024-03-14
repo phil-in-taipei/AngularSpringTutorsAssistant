@@ -1,0 +1,41 @@
+<div>
+    <div *ngIf="usrProfile$ | async as profile" class="container">
+        <div class="table-responsive">
+            <div class="container mt-1 pt-1">
+                <h1>Profile of: {{ profile.user.username[0] | uppercase }}{{ profile.user.username.substring(1) }}</h1>
+            </div>
+            <hr />
+            <table class="profile-table" style="width:100%">
+                <tr>
+                    <th><h3>Name</h3></th>
+                    <td>
+                          <h3>
+                            {{ profile.given_name }} {{ profile.surname }}
+                          </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <h3>Email</h3>
+                    </th>
+                    <td>
+                        <h3>{{ profile.contact_email }}</h3>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <div class="d-grid gap-2">
+                <button class="btn btn-sm btn-outline-secondary" type="button" (click)="toggleForm()">
+                  {{ showForm ? "No thanks, I'll Edit My Profile Later" : "Edit Profile" }}
+                </button>
+            </div>
+            <hr />
+            <div [hidden]="!showForm">
+                <app-edit-profile-form [profile]=profile
+                (closeEvent)="closeFormHander($event)">
+                </app-edit-profile-form>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>

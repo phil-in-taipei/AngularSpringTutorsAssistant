@@ -1,0 +1,34 @@
+.navbar-brand {
+    color: #758d97 !important;
+  }
+  
+  .navbar-dark .navbar-nav > li > a:hover {
+      color: #333;
+  }
+  
+  .navbar-dark .navbar-nav > .open > a:focus {
+      background-color: black !important;
+      color: #758d97;
+  }
+  
+  .navbar-dark .navbar-nav > .open > a:hover {
+      color: #004483;
+  }
+  
+  .dropdown-menu {
+      font-size: 1em;
+      color: #758d97;
+  }
+  
+  .dropdown-item > li > a:hover {
+      color: #004483;
+  }
+  
+  .dropdown-menu > li > a {
+    color: #758d97;
+  }
+  
+  
+  .mydropnav {
+      color: #758d97;
+  }

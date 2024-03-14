@@ -1,0 +1,5 @@
+sudo sysctl -w fs.inotify.max_user_watches=524288
+
+ng build --prod --output-path ../../django/backend/static/angular --namedChunks=true --output-hashing none --watch
+
+
