@@ -1,5 +1,5 @@
 import { UserProfileActions, UserProfileActionTypes } from './user.actions';
-import { UserProfileModel } from '../models/user-profile.model';
+import { UserProfileModel } from '../../../models/user-profile.model';
 
 export interface UserProfileState {
     errorMessage: string | undefined,

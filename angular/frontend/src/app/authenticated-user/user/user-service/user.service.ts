@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
-import { environment } from '../../environments/environment';
-import { AuthService } from '../authentication/auth.service';
+import { environment } from '../../../../environments/environment';
+import { AuthService } from '../../../authentication/auth.service';
 import { UserProfileModel, 
-  UserProfileEditModel } from '../models/user-profile.model'; 
+  UserProfileEditModel } from '../../../models/user-profile.model'; 
 
 @Injectable({
   providedIn: 'root'

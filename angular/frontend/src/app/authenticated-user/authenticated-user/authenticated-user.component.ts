@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import { AppState } from 'src/app/reducers';
-import { UserProfileRequested } from './user.actions';
+import { UserProfileRequested } from '../user/user-state/user.actions';
 
 @Component({
   selector: 'app-authenticated-user',

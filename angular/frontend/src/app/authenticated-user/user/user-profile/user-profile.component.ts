@@ -6,9 +6,9 @@ import { AppState } from 'src/app/reducers';
 import { 
   selectUserProfile, selectUserProfileLoaded,
   userProfileSubmissionErrorMsg, userProfileSubmissionSuccessMsg
-} from './../user.selectors';
-import { UserProfileModel } from '../../models/user-profile.model';
-import { UserProfileMessagesCleared } from '../user.actions';
+} from '../user-state/user.selectors';
+import { UserProfileModel } from '../../../models/user-profile.model';
+import { UserProfileMessagesCleared } from '../user-state/user.actions';
 
 @Component({
   selector: 'app-user-profile',

@@ -5,13 +5,13 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 
 import { AuthenticatedUserRoutingModule } from './authenticated-user-routing.module';
-import { AuthenticatedUserComponent } from './authenticated-user.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AuthenticatedUserComponent } from './authenticated-user/authenticated-user.component';
+import { UserProfileComponent } from './user/user-profile/user-profile.component';
 import { AuthenticatedHeaderComponent } from './authenticated-layout/authenticated-header/authenticated-header.component';
 import { AuthenticatedFooterComponent } from './authenticated-layout/authenticated-footer/authenticated-footer.component';
-import { UserEffects } from './user.effects';
-import { userProfileReducer } from './user.reducers';
-import { EditProfileFormComponent } from './user-profile/edit-profile-form/edit-profile-form.component';
+import { UserEffects } from './user/user-state/user.effects';
+import { userProfileReducer } from './user/user-state/user.reducers';
+import { EditProfileFormComponent } from './user/edit-profile-form/edit-profile-form.component';
 
 @NgModule({
   declarations: [

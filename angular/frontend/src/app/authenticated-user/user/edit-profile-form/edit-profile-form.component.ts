@@ -4,7 +4,7 @@ import { AppState } from '../../../reducers';
 import {select, Store} from '@ngrx/store';
 
 import { UserProfileModel, UserProfileEditModel } from 'src/app/models/user-profile.model';
-import { UserProfileSubmitted } from '../../user.actions';
+import { UserProfileSubmitted } from '../user-state/user.actions';
 
 
 @Component({

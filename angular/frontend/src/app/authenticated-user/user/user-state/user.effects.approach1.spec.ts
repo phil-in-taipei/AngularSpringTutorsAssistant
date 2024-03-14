@@ -11,13 +11,13 @@ import {
     UserProfileLoaded, 
     UserProfileRequested, 
     UserProfileSaved} from './user.actions';
-import { UserProfileModel, UserProfileEditModel } from '../models/user-profile.model';
+import { UserProfileModel, UserProfileEditModel } from '../../../models/user-profile.model';
 
 import { 
     userProfileData, userProfileEditData, userProfileEdited 
-    } from '../test-data/authenticated-user-module-tests/user-related-tests/user-data';
+    } from '../../../test-data/authenticated-user-module-tests/user-related-tests/user-data';
 import { UserEffects } from './user.effects';
-import { UserService } from './user.service';
+import { UserService } from '../user-service/user.service';
 
 type PartialUserServiceFetch = Pick<UserService, 'fetchUserProfile'>;
 

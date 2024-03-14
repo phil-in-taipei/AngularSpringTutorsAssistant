@@ -2,12 +2,12 @@ import { TestBed, fakeAsync, flush  } from '@angular/core/testing';
 import { HttpTestingController, HttpClientTestingModule
 } from '@angular/common/http/testing';
 
-import { authData } from '../test-data/authentication-tests/authentication-data';
-import { AuthService } from '../authentication/auth.service';
-import { environment } from '../../environments/environment';
+import { authData } from '../../../test-data/authentication-tests/authentication-data';
+import { AuthService } from '../../../authentication/auth.service';
+import { environment } from '../../../../environments/environment';
 import { userProfileData, 
         userProfileEditData 
-  } from '../test-data/authenticated-user-module-tests/user-related-tests/user-data';
+  } from '../../../test-data/authenticated-user-module-tests/user-related-tests/user-data';
 import { UserService } from './user.service';
 
 describe('UserService', () => {

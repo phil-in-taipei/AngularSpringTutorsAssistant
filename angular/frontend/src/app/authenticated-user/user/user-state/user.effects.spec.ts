@@ -10,7 +10,7 @@ import { UserEffects } from './user.effects';
 import { initialUserProfileState } from './user.reducers';
 import { 
   userProfileData, userProfileEdited, userProfileEditData 
-} from '../test-data/authenticated-user-module-tests/user-related-tests/user-data';
+} from '../../../test-data/authenticated-user-module-tests/user-related-tests/user-data';
 import { 
     UserProfileSubmitted,
     UserProfileLoaded, 
@@ -18,9 +18,9 @@ import {
     UserProfileSaved
   } from './user.actions';
 import { selectUserProfile } from './user.selectors';
-import { UserService } from './user.service';
+import { UserService } from '../user-service/user.service';
 import { UserProfileModel, 
-  UserProfileEditModel } from '../models/user-profile.model';
+  UserProfileEditModel } from '../../../models/user-profile.model';
 
 
 fdescribe('UserEffects', () => {

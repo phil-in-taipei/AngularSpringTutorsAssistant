@@ -1,10 +1,10 @@
 import { stateWithLoadedUser, 
          stateWithRevisedUser 
-} from '../test-data/authenticated-user-module-tests/user-related-tests/user-state';
+} from '../../../test-data/authenticated-user-module-tests/user-related-tests/user-state';
 import { userProfileReducer, initialUserProfileState } from './user.reducers';
 import { userProfileData, 
         userProfileEdited 
-} from '../test-data/authenticated-user-module-tests/user-related-tests/user-data';
+} from '../../../test-data/authenticated-user-module-tests/user-related-tests/user-data';
 
 import { UserProfileCleared, UserProfileLoaded, 
     UserProfileSaved } from './user.actions';

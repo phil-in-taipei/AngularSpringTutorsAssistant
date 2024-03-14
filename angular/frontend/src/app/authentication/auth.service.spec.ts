@@ -9,7 +9,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { httpTokensResponse, httpTokenResponseFailure,
   httpTokenRefreshResponse1, httpTokenRefreshResponse2, 
   httpTokenRefreshResponse3 } from '../test-data/authentication-tests/authentication-data';
-import { UserProfileComponent } from '../authenticated-user/user-profile/user-profile.component';
+import { UserProfileComponent } from '../authenticated-user/user/user-profile/user-profile.component';
 
 
 describe('AuthService', () => {

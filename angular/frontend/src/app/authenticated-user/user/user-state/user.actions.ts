@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
 import { UserProfileModel, 
-    UserProfileEditModel } from '../models/user-profile.model';
+    UserProfileEditModel } from '../../../models/user-profile.model';
 
 
 export enum UserProfileActionTypes {

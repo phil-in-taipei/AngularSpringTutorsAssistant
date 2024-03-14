@@ -7,9 +7,9 @@ import {
   mergeMap, withLatestFrom
 }  from "rxjs/operators";
 
-import { AppState } from '../reducers';
+import { AppState } from '../../../reducers';
 import { selectUserProfile } from './user.selectors';
-import { UserService } from './user.service';
+import { UserService } from '../user-service/user.service';
 import { 
   UserProfileActionTypes,  UserProfileLoaded, 
   UserProfileRequested, UserProfileRequestCancelled,

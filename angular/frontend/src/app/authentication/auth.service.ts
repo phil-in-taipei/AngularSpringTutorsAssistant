@@ -5,7 +5,7 @@ import { Subject } from 'rxjs';
 //import * as CryptoJS from 'crypto-js';
 import {Store} from '@ngrx/store';
 import { AppState } from './../reducers';
-import { UserProfileCleared } from './../authenticated-user/user.actions';
+import { UserProfileCleared } from '../authenticated-user/user/user-state/user.actions';
 import { environment } from '../../environments/environment';
 import { AuthDataModel } from '../models/auth-data.model';
 import { AuthLoginModel, AuthLoginResponseModel, 
